@@ -2,11 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import '../styles/global.css';
+import { inject } from '@vercel/analytics';
+
+inject();
 ---
 
 <Layout title='parthm'>
   <main class='dark'>
-    <div class='h-screen'>
+    <div class='min-h-screen'>
       <Card />
     </div>
   </main>
